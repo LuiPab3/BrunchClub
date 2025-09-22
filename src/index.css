@@ -1,0 +1,20 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* input/textarea/select base para Contact */
+.tb-input {
+  @apply mt-1 w-full rounded-md border border-black/10 bg-[#e6d9d3] px-4 py-3 text-sm text-gray-900
+         placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-black/10;
+}
+
+
+:root {
+  --radius: 0.5rem;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-7xl;
+}
