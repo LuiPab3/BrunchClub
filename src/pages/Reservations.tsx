@@ -108,7 +108,7 @@ function Field({
   return (
     <label className="block">
       <span className="block text-[13px] text-gray-700">
-        {label} {required && <span className="align-super text-[11px] text-gray-600">(required)</span>}
+        {label} {required && <span className="align-super text-[11px] text-gray-600 absolute mx-1">(required)</span>}
       </span>
       {children}
     </label>
