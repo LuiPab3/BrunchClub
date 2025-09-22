@@ -30,7 +30,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden bg-black"
+      className="px-24 relative w-full h-[55vh] md:h-[70vh] overflow-hidden bg-black"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >

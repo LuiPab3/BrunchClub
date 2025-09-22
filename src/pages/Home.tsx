@@ -31,7 +31,7 @@ export default function Home() {
 
       {/* Welcome */}
       <section className="container py-16 md:py-20">
-        <div className="grid md:grid-cols-2 gap-10 items-start">
+        <div className="grid md:grid-cols-2 gap-10 items-start px-24">
           <div>
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">Welcome</h2>
             <p className="mt-4 text-gray-700 max-w-xl">
@@ -48,9 +48,9 @@ export default function Home() {
 
       {/* Wedding destinations */}
       <section className="container py-10 md:py-14">
-        <h3 className="text-2xl md:text-3xl font-medium">Wedding destinations</h3>
+        <h3 className="text-2xl md:text-3xl font-medium px-24">Wedding destinations</h3>
 
-        <div className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 px-24">
           {DESTINATIONS.map((d) => (
             <figure key={d.name} className="space-y-2">
               <div className="h-28 md:h-32 rounded-lg overflow-hidden shadow-sm border bg-gray-100">
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* Our services (franja beige) */}
-      <section className="w-full py-14 md:py-16 bg-[#ede3dd]">
+      <section className="w-full py-14 md:py-16 bg-[#ede3dd] px-24">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-8 items-start">
             <div className="md:col-span-1">
@@ -94,7 +94,7 @@ export default function Home() {
 
       {/* Explore our portafolio */}
       <section className="container py-14 md:py-16">
-        <div className="grid md:grid-cols-5 gap-8 items-start">
+        <div className="grid md:grid-cols-5 gap-8 items-start px-24">
           <div className="md:col-span-2">
             <h3 className="text-4xl md:text-5xl font-semibold leading-tight">
               Explore our<br/> portafolio
