@@ -6,7 +6,7 @@ import Menu from './pages/Menu'
 import Gallery from './pages/Gallery'
 import Reservations from './pages/Reservations'
 import About from './pages/About'
-import Privacy from './pages/Privacy'
+//import Privacy from './pages/Privacy'
 
 const routes: RouteObject[] = [
   {
@@ -19,7 +19,7 @@ const routes: RouteObject[] = [
       { path: 'gallery', element: <Gallery /> },
       { path: 'reservations', element: <Reservations /> },
       { path: 'about', element: <About /> },
-      { path: 'privacy', element: <Privacy /> },
+      //{ path: 'privacy', element: <Privacy /> },
     ],
   },
 ]

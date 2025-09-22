@@ -13,6 +13,8 @@ export default {
       },
       fontFamily: {
         display: ["Inter", "ui-sans-serif", "system-ui", "Arial"],
+        greatvibes: ['"Great Vibes"', 'cursive'],
+        montserrat: ['"Montserrat"', "sans-serif"],
       },
       borderRadius: {
         '2xl': '1rem',
