@@ -13,15 +13,6 @@ export default function About() {
 
       {/* Contenido principal */}
       <section className="container py-10 md:py-14">
-        {/* Nombre + subtítulo */}
-        <div className="text-center">
-          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
-            Linda Fernandez
-          </h1>
-          <p className="mt-1 text-sm italic text-gray-600">
-            owner, designer, stylist
-          </p>
-        </div>
 
         {/* Grid de dos columnas */}
         <div className="mt-10 grid md:grid-cols-2 gap-10 md:gap-12 items-start">
@@ -36,16 +27,27 @@ export default function About() {
               />
             </div>
 
-            {/* Tarjeta beige con texto */}
-            <div className="bg-[#e9ddd8] rounded-md border shadow-sm p-6 leading-relaxed text-gray-800">
-              <p>
-                Achiever, optimist, tastemaker, lighting enthusiast, and an all-around
-                sense of chill. She has a quick-witted sense of humor, loves travel,
-                culture, and cuisine, and is decisive and forward-thinking. Her
-                wedding-day energy is calm yet driven, and her background in classical
-                music has shaped her attention to detail and appreciation for the arts,
-                fashion, and interior design. Let&apos;s connect.
+          {/* Tarjeta beige con texto */}
+          {/* Nombre + subtítulo */}
+          <div>
+            <div className="text-center">
+              <h1 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                Linda Fernandez
+              </h1>
+              <p className="mt-1 text-2xl italic text-gray-600 font-greatvibes">
+                owner, designer, stylist
               </p>
+            </div>
+              <div className="bg-[#e9ddd8] rounded-md border shadow-sm p-6 leading-relaxed text-gray-800">
+                <p>
+                  Achiever, optimist, tastemaker, lighting enthusiast, and an all-around
+                  sense of chill. She has a quick-witted sense of humor, loves travel,
+                  culture, and cuisine, and is decisive and forward-thinking. Her
+                  wedding-day energy is calm yet driven, and her background in classical
+                  music has shaped her attention to detail and appreciation for the arts,
+                  fashion, and interior design. Let&apos;s connect.
+                </p>
+              </div>
             </div>
           </div>
 
@@ -66,10 +68,10 @@ export default function About() {
 
             {/* Tarjeta beige grande con texto centrado */}
             <div className="bg-[#e9ddd8] rounded-xl border shadow-sm p-8 text-center">
-              <h4 className="text-xl md:text-2xl font-medium text-gray-900">
+              <h4 className="text-xl md:text-2xl font-thin text-gray-900">
                 We value inclusivity and culture.
               </h4>
-              <p className="mt-3 text-gray-700 leading-relaxed">
+              <p className="mt-3 text-gray-700 leading-relaxed font-medium">
                 Memories aren&apos;t only made on your wedding day. We love crafting
                 entire weekend experiences that inspire, yielding a series of iconic
                 events. Cheers to the weekend.
