@@ -1,16 +1,6 @@
-const SERVICES = [
-  { title: 'Weddings', desc: 'Elegant and timeless celebrations' },
-  { title: 'Baby Showers', desc: 'Gatherings to celebrate new beginnings' },
-  { title: 'Brunches', desc: 'Stylish brunches and private events' },
-  { title: 'Proposals', desc: 'Romantic and unforgettable setups' },
-]
-
-const PORTFOLIO = [
-  '/src/assets/photos/home/port-1.jpg',
-  '/src/assets/photos/home/port-2.jpg',
-  '/src/assets/photos/home/port-3.jpg',
-  '/src/assets/photos/home/port-4.jpg',
-]
+import WeddingDestinations from '../components/WeddingDestinations'
+import OurServices from '../components/OurServices'
+import ExploreOurPortfolio from '../components/ExploreOurPortfolio'
 
 export default function Menu() {
   return (
@@ -128,53 +118,9 @@ export default function Menu() {
         </div>
       </section>
 
-      {/* Our services (franja beige) */}
-      <section className="w-full py-14 md:py-16 bg-[#ede3dd]">
-        <div className="container">
-          <div className="grid md:grid-cols-4 gap-8 items-start">
-            <div className="md:col-span-1">
-              <h3 className="text-2xl md:text-3xl font-medium">Our services</h3>
-              <p className="mt-3 text-gray-700">
-                We create unforgettable experiences tailored to your vision.
-              </p>
-            </div>
-
-            <div className="md:col-span-3 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {SERVICES.map((s) => (
-                <div
-                  key={s.title}
-                  className="bg-white rounded-lg border shadow-[0_2px_0_rgba(0,0,0,0.1)] p-5 text-center"
-                >
-                  <div className="font-serif text-lg">{s.title}</div>
-                  <div className="text-xs text-gray-600 mt-2 leading-snug">{s.desc}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Explore our portafolio */}
-      <section className="container py-14 md:py-16">
-        <div className="grid md:grid-cols-5 gap-8 items-start">
-          <div className="md:col-span-2">
-            <h3 className="text-4xl md:text-5xl font-semibold leading-tight">
-              Explore our<br /> portafolio
-            </h3>
-          </div>
-
-          <div className="md:col-span-3 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {PORTFOLIO.map((src, i) => (
-              <div
-                key={i}
-                className="aspect-[3/4] rounded-lg overflow-hidden border shadow-sm bg-gray-100"
-              >
-                <img src={src} alt={`Portfolio ${i + 1}`} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WeddingDestinations fontFamily='greatvibes' />
+      <OurServices fontFamily='greatvibes' />
+      <ExploreOurPortfolio fontFamily='greatvibes' />
     </div>
   )
 }
