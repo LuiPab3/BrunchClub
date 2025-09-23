@@ -24,7 +24,7 @@ export default function Contact() {
       <div className="relative z-10 flex items-center justify-center py-12 md:py-16">
         <div className="w-full max-w-2xl mx-4 md:mx-0 bg-[#eadfd9]/95 backdrop-blur rounded-2xl md:rounded-3xl shadow-xl border border-black/5">
           <div className="px-6 md:px-10 py-7 md:py-9">
-            <h1 className="text-2xl md:text-[28px] font-semibold text-center tracking-tight text-gray-900">
+            <h1 className="text-2xl md:text-[28px] font-semibold text-center tracking-tight text-gray-900 font-montserrat">
               Event Quote Request
             </h1>
 
