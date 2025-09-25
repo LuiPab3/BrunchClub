@@ -1,8 +1,8 @@
 const PORTFOLIO = [
-  '/src/assets/photos/home/port-1.jpg',
-  '/src/assets/photos/home/port-2.jpg',
-  '/src/assets/photos/home/port-3.jpg',
-  '/src/assets/photos/home/port-4.jpg',
+  '/src/assets/photos/portfolio/port1.webp',
+  '/src/assets/photos/portfolio/port2.webp',
+  '/src/assets/photos/portfolio/port3.webp',
+  '/src/assets/photos/portfolio/port4.webp',
 ]
 
 export default function ExploreOurPortfolio({fontFamily='Montserrat'}) {
@@ -11,7 +11,7 @@ export default function ExploreOurPortfolio({fontFamily='Montserrat'}) {
       <div className="grid md:grid-cols-5 gap-8 items-start px-24">
         <div className="md:col-span-2">
           <h3 className={`text-4xl md:text-5xl font-medium leading-tight font-${fontFamily}`}>
-            Explore our<br/> portafolio
+            Our<br/> portafolio
           </h3>
         </div>
 

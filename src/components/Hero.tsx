@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 // Reemplaza estas rutas por tus fotos reales
 const IMAGES = [
-  '/src/assets/photos/hero-1.jpg',
-  '/src/assets/photos/hero-2.jpg',
+  '/src/assets/photos/hero/hero1.Webp',
+  '/src/assets/photos/hero/hero2.Webp',
   // '/src/assets/photos/hero-3.jpg',
 ]
 
@@ -19,7 +19,7 @@ export default function Hero() {
     if (paused) return
     timerRef.current = window.setInterval(() => {
       setIndex((i) => (i + 1) % IMAGES.length)
-    }, 6000)
+    }, 5000)
     return () => {
       if (timerRef.current) window.clearInterval(timerRef.current)
     }
@@ -54,21 +54,12 @@ export default function Hero() {
       <div className="relative z-10 h-full">
         <div className="container h-full flex items-center">
           <div className="max-w-xl text-white">
-            <h1 className="font-display font-semibold leading-[0.95] tracking-tight
-                           text-4xl md:text-6xl lg:text-7xl">
-              Elevate
-              <br />
-              your event
-            </h1>
-
-            <p className="mt-4 text-white/85 text-base md:text-lg">
-              “texto pendiente”.
-            </p>
+           
 
             <div className="mt-8 flex gap-4">
               <Link
                 to="/reservations"
-                className="px-5 py-3 rounded-2xl bg-primary text-white shadow-md"
+                className="px-5 py-3 rounded-2xl bg-[#e9ddd8] text-white shadow-md"
               >
                 Get in touch
               </Link>

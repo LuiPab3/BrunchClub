@@ -1,9 +1,9 @@
 const DESTINATIONS = [
-  { name: 'Antigua',       img: '/src/assets/photos/home/dest-antigua.jpg' },
-  { name: 'Atitlan',       img: '/src/assets/photos/home/dest-atitlan.jpg' },
-  { name: 'Tikal',         img: '/src/assets/photos/home/dest-tikal.jpg' },
-  { name: 'Guatemala City',img: '/src/assets/photos/home/dest-guate.jpg' },
-  { name: 'Alotenango',    img: '/src/assets/photos/home/dest-alotenango.jpg' },
+  { name: 'Guatemala City',img: '/src/assets/photos/wedding destinations/cd.webp' },
+  { name: 'Antigua',       img: '/src/assets/photos/wedding destinations/antigua.webp' },
+  { name: 'Atitlan',       img: '/src/assets/photos/wedding destinations/atitlan.webp' },
+  { name: 'Tikal',         img: '/src/assets/photos/wedding destinations/tikal.webp' },
+  { name: 'Alta Verapaz',    img: '/src/assets/photos/wedding destinations/alta-verapaz.webp' },
 ]
 
 export default function WeddingDestinations({fontFamily='Montserrat'}) {

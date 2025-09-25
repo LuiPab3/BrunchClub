@@ -22,7 +22,7 @@ export default function Home() {
           <div
             className="h-[240px] md:h-[300px] rounded-2xl bg-white border shadow-sm overflow-hidden"
             // Reemplaza el bg con una imagen si quieres:
-            // style={{ backgroundImage: `url('/src/assets/photos/welcome.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            style={{ backgroundImage: `url('/src/assets/photos/home/home2.Webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           />
         </div>
       </section>

@@ -1,5 +1,5 @@
 // src/pages/Events.tsx  (esta vista será tu "Services")
-const BG_IMAGE = '/src/assets/photos/services-banner.jpg' // 🔁 reemplaza por tu imagen
+const BG_IMAGE = '/src/assets/photos/services/bannerser.webp.jpg' 
 
 export default function Events() {
   const items = [
@@ -32,9 +32,7 @@ export default function Events() {
         <img src={BG_IMAGE} alt="" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-white/10" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl font-serif font-medium text-black drop-shadow-sm">
-            Services
-          </h1>
+          
         </div>
       </section>
 

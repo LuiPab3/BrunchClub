@@ -117,10 +117,6 @@ export default function Menu() {
           </div>
         </div>
       </section>
-
-      <WeddingDestinations fontFamily='greatvibes' />
-      <OurServices fontFamily='greatvibes' />
-      <ExploreOurPortfolio fontFamily='greatvibes' />
     </div>
   )
 }

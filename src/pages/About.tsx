@@ -5,7 +5,7 @@ export default function About() {
       {/* Banner superior (puede ser B/N) */}
       <section className="w-full h-[220px] md:h-[300px] overflow-hidden">
         <img
-          src="/src/assets/photos/about-banner.jpg"
+          src="/src/assets/photos/about/ab2.webp"
           alt=""
           className="w-full h-full object-cover"
         />
@@ -60,7 +60,7 @@ export default function About() {
             {/* Foto horizontal */}
             <div className="rounded-md overflow-hidden bg-gray-100 border">
               <img
-                src="/src/assets/photos/about/about-event.jpg"
+                src="/src/assets/photos/about/ab1.webp"
                 alt="Event"
                 className="w-full h-full object-cover"
               />
