@@ -1,7 +1,7 @@
 // src/pages/Contact.tsx
 import { useState } from 'react'
 
-const BG_IMAGE = '/src/assets/photos/contact/contact-bg.jpg' // <-- cámbiala por tu foto
+const BG_IMAGE = '/src/assets/photos/contact/FoContact.webp' // <-- cámbiala por tu foto
 
 export default function Contact() {
   // (solo estética por ahora; funcionalidad la vemos después)

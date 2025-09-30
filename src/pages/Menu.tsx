@@ -56,7 +56,11 @@ export default function Menu() {
             {/*Titulo*/}
             <div className="flex px-6 md:px-10 items-center">
               <p className="font-montserrat">
-                We specialize in creating warm, elegant atmospheres at iconic and historic wedding venues along East Coast and beyond. From rooftops to museums to French Chàteaux, experience the magic of our favorite moments
+                At The Brunch Club, we design destination weddings as emotional journeys. Each
+                celebration becomes a tailor-made universe: iconic venues, captivating
+                atmospheres, and an experience as personal as it is unforgettable.
+                With us, your wedding goes beyond expectations and becomes an everlasting
+                memory.
               </p>
             </div>
             {/*Fotos*/}

@@ -16,7 +16,9 @@ export default function Home() {
           <div>
             <h2 className="text-4xl md:text-5xl font-semibold tracking-tight">Welcome</h2>
             <p className="mt-4 text-gray-700 max-w-xl">
-              We create memorable and seamless events that reflect your unique vision and style.
+              Welcome to The Brunch Club. Where the art of celebration becomes an
+              extraordinary experience. Discover how we transform every event into an
+              unforgettable setting.
             </p>
           </div>
           <div
