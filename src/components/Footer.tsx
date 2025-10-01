@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             {/* TikTok */}
             <a
-              href="https://www.tiktok.com/@brunchclub_gt"
+              href="https://www.tiktok.com/@thebrunchclub.gt"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="TikTok"
