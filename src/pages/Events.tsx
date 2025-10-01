@@ -1,3 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 // src/pages/Events.tsx  (esta vista será tu "Services")
 const BG_IMAGE = '/src/assets/photos/services/bannerser.webp.jpg' 
 
@@ -29,7 +32,13 @@ export default function Events() {
     <div className="bg-white">
       {/* Banner superior con título */}
       <section className="relative w-full h-[220px] md:h-[280px] overflow-hidden">
-        <img src={BG_IMAGE} alt="" className="w-full h-full object-cover" />
+        <LazyLoadImage
+          src={BG_IMAGE}
+          alt=""
+          effect="blur"
+          className="w-full h-full object-cover"
+          wrapperClassName="w-full h-full"
+        />
         <div className="absolute inset-0 bg-white/10" />
         <div className="absolute inset-0 flex items-center justify-center">
           

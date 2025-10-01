@@ -1,3 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 const PORTFOLIO = [
   '/src/assets/photos/portfolio/port1.webp',
   '/src/assets/photos/portfolio/port2.webp',
@@ -21,7 +24,14 @@ export default function ExploreOurPortfolio({fontFamily='Montserrat'}) {
               key={i}
               className="aspect-[3/4] rounded-lg overflow-hidden border shadow-sm bg-gray-100"
             >
-              <img src={src} alt={`Portfolio ${i + 1}`} className="w-full h-full object-cover" />
+              <LazyLoadImage
+                src={src}
+                alt={`Portfolio ${i + 1}`}
+                className="w-full h-full object-cover"
+                wrapperClassName="w-full h-full"
+                effect="blur"
+                loading='lazy'  
+              />
             </div>
           ))}
         </div>

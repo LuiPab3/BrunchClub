@@ -1,3 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 const DESTINATIONS = [
   { name: 'Guatemala City',img: '/src/assets/photos/wedding destinations/cd.webp' },
   { name: 'Antigua',       img: '/src/assets/photos/wedding destinations/antigua.webp' },
@@ -15,10 +18,13 @@ export default function WeddingDestinations({fontFamily='Montserrat'}) {
         {DESTINATIONS.map((d) => (
           <figure key={d.name} className="space-y-2">
             <div className="h-28 md:h-32 rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-              <img
+              <LazyLoadImage
                 src={d.img}
                 alt={d.name}
                 className="w-full h-full object-cover"
+                effect="blur"
+                wrapperClassName="w-full h-full"
+                loading='lazy'
               />
             </div>
             <figcaption className="text-center text-sm md:text-base">{d.name}</figcaption>

@@ -1,6 +1,5 @@
-import WeddingDestinations from '../components/WeddingDestinations'
-import OurServices from '../components/OurServices'
-import ExploreOurPortfolio from '../components/ExploreOurPortfolio'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 export default function Menu() {
   return (
@@ -9,10 +8,12 @@ export default function Menu() {
         <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-6">
           {/*Columna Izquierda: Imagen del lado Izquierdo*/}
           <div className="h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-md border bg-gray-100">
-            <img
+            <LazyLoadImage
               src="/src/assets/photos/wedding destinations/table.jpeg"
               alt="Main"
               className="w-full h-full object-cover"
+              effect="blur"
+              wrapperClassName="w-full h-full"
             />
           </div>
 
@@ -31,17 +32,21 @@ export default function Menu() {
             {/*Imagenes en la parte inferior*/}
             <div className="grid grid-cols-2 gap-4 mt-6">
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                <img
+                <LazyLoadImage
                   src="/src/assets/photos/wedding destinations/food.jpeg"
                   alt="Right 1"
                   className="w-full h-full object-cover"
+                  effect="blur"
+                  wrapperClassName="w-full h-full"
                 />
               </div>
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                <img
+                <LazyLoadImage
                   src="/src/assets/photos/wedding destinations/flowers.jpeg"
                   alt="Right 2"
                   className="w-full h-full object-cover"
+                  effect="blur"
+                  wrapperClassName="w-full h-full"
                 />
               </div>
             </div>
@@ -68,34 +73,46 @@ export default function Menu() {
               {/*Columna Izquierda */}
               <div className="flex flex-col gap-3 mt-10 mb-4 ml-5">
                 <div className="h-[120px] md:h-[140px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                  <img
+                  <LazyLoadImage
                     src="/src/assets/photos/wedding destinations/cd.webp"
                     alt="Image 1"
                     className="w-full h-full object-cover"
+                    loading='lazy'
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
                   />
                 </div>
                 <div className="ml-5 h-[120px] md:h-[140px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                  <img
+                  <LazyLoadImage
                     src="/src/assets/photos/wedding destinations/tikal.webp"
                     alt="Image 2"
                     className="w-full h-full object-cover"
+                    loading='lazy'
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
                   />
                 </div>
               </div>
               {/*Columna en medio */}
               <div className="flex flex-col gap-9 mt-6 mb-6 ml-4 mr-4">
                 <div className="h-[120px] md:h-[140px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                  <img
+                  <LazyLoadImage
                     src="/src/assets/photos/wedding destinations/atitlan.webp"
                     alt="Image 1"
                     className="w-full h-full object-cover"
+                    loading='lazy'
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
                   />
                 </div>
                 <div className="h-[120px] md:h-[140px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                  <img
+                  <LazyLoadImage
                     src="/src/assets/photos/wedding destinations/antigua.webp"
                     alt="Image 2"
                     className="w-full h-full object-cover"
+                    loading='lazy'
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
                   />
                 </div>
               </div>
@@ -103,17 +120,23 @@ export default function Menu() {
               {/*Columna Derecha*/}
               <div className="flex flex-col gap-3 mt-10 mb-4 mr-5">
                 <div className="mr-5 h-[120px] md:h-[140px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                  <img
+                  <LazyLoadImage
                     src="/src/assets/photos/wedding destinations/alta-verapaz.webp"
                     alt="Image 1"
                     className="w-full h-full object-cover"
+                    loading='lazy'
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
                   />
                 </div>
                 <div className="h-[120px] md:h-[140px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                  <img
+                  <LazyLoadImage
                     src="/src/assets/photos/wedding destinations/alotenango.webp"
                     alt="Image 2"
                     className="w-full h-full object-cover"
+                    loading='lazy'
+                    effect="blur"
+                    wrapperClassName="w-full h-full"
                   />
                 </div>
               </div>

@@ -1,5 +1,7 @@
 // src/pages/Contact.tsx
 import { useState } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const BG_IMAGE = '/src/assets/photos/contact/FoContact.webp' // <-- cámbiala por tu foto
 
@@ -11,10 +13,12 @@ export default function Contact() {
     <section className="relative w-full min-h-[80vh]">
       {/* Fondo con imagen */}
       <div className="absolute inset-0">
-        <img
+        <LazyLoadImage
           src={BG_IMAGE}
           alt=""
+          effect="blur"
           className="w-full h-full object-cover"
+          wrapperClassName="w-full h-full"
         />
         {/* capa sutil para legibilidad si la foto es muy clara */}
         <div className="absolute inset-0 bg-black/20" />
