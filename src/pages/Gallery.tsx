@@ -19,14 +19,12 @@ export default function Gallery() {
               <div className="h-96 rounded-lg overflow-hidden shadow-sm border bg-gray-100">
                 <img
                   src={img}
-                
+                  loading='lazy'
                   className="w-full h-full object-cover"
                 />
               </div>
           ))}
         </div>
-      
-
     </div>
   )
 }
