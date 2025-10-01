@@ -74,7 +74,7 @@ export default function Hero() {
         onClick={() => go(-1)}
         className="absolute left-3 top-1/2 -translate-y-1/2 z-10
                    inline-flex items-center justify-center w-10 h-10
-                   rounded-full bg-black/40 text-white hover:bg-black/60"
+                   rounded-full bg-black/40 text-white hover:bg-black/60 pb-1"
       >
         ‹
       </button>
@@ -83,7 +83,7 @@ export default function Hero() {
         onClick={() => go(1)}
         className="absolute right-3 top-1/2 -translate-y-1/2 z-10
                    inline-flex items-center justify-center w-10 h-10
-                   rounded-full bg-black/40 text-white hover:bg-black/60"
+                   rounded-full bg-black/40 text-white hover:bg-black/60 pb-1"
       >
         ›
       </button>
