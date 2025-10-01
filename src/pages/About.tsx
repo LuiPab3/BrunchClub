@@ -63,7 +63,7 @@ export default function About() {
             </h3>
 
             {/* Foto horizontal */}
-            <div className="rounded-md overflow-hidden bg-gray-100 border">
+            <div className="rounded-md overflow-hidden bg-gray-100 border w-full h-64 object-center">
               <img
                 src="/src/assets/photos/about/ab1.webp"
                 alt="Event"
