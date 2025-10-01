@@ -12,7 +12,10 @@
     "@fortawesome/fontawesome-free": "^7.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+<<<<<<< HEAD
     "react-international-phone": "^4.6.0",
+=======
+>>>>>>> a4895cf079f061c6e9187f602c3301cfaa86f576
     "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
