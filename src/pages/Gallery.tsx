@@ -1,3 +1,6 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
+
 const PORTFOLIO_IMAGES = [
   { img: '/src/assets/photos/portfolio/Port1.webp' },
   { img: '/src/assets/photos/portfolio/port2.webp' },
@@ -15,12 +18,15 @@ export default function Gallery() {
     <div className="container py-10">
       <h1 className="text-5xl md:text-7xl font-greatvibes text-center mt-4 md:mt-20">Our portfolio</h1>
         <div className="mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4">
-          {PORTFOLIO_IMAGES.map(({img}) => (
-              <div className="h-96 rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                <img
+          {PORTFOLIO_IMAGES.map(({img}, i) => (
+              <div key={i} className="h-96 rounded-lg overflow-hidden shadow-sm border bg-gray-100 relative">
+                <LazyLoadImage
                   src={img}
                   loading='lazy'
                   className="w-full h-full object-cover"
+                  effect="blur"
+                  alt={`Portfolio ${i + 1}`}
+                  wrapperClassName="w-full h-full"
                 />
               </div>
           ))}
