@@ -40,6 +40,7 @@ export default function Menu() {
                   wrapperClassName="w-full h-full"
                 />
               </div>
+
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
                 <LazyLoadImage
                   src="/src/assets/photos/wedding destinations/flowers.jpeg"
@@ -61,11 +62,7 @@ export default function Menu() {
             {/*Titulo*/}
             <div className="flex px-6 md:px-10 items-center">
               <p className="font-montserrat">
-                At The Brunch Club, we design destination weddings as emotional journeys. Each
-                celebration becomes a tailor-made universe: iconic venues, captivating
-                atmospheres, and an experience as personal as it is unforgettable.
-                With us, your wedding goes beyond expectations and becomes an everlasting
-                memory.
+                We specialize in creating warm, elegant atmospheres at iconic and historic wedding venues along East Coast and beyond. From rooftops to museums to French Chàteaux, experience the magic of our favorite moments
               </p>
             </div>
             {/*Fotos*/}

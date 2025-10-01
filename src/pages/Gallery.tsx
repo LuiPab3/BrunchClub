@@ -2,7 +2,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
 const PORTFOLIO_IMAGES = [
-  { img: '/src/assets/photos/portfolio/Port1.webp' },
+  { img: '/src/assets/photos/portfolio/port1.webp' },
   { img: '/src/assets/photos/portfolio/port2.webp' },
   { img: '/src/assets/photos/portfolio/port3.webp' },
   { img: '/src/assets/photos/portfolio/port4.webp' },
@@ -10,7 +10,6 @@ const PORTFOLIO_IMAGES = [
   { img: '/src/assets/photos/portfolio/port6.webp' },
   { img: '/src/assets/photos/portfolio/port7.webp' },
   { img: '/src/assets/photos/portfolio/port8.webp' },
-  
 ]
 
 export default function Gallery() {
@@ -25,7 +24,6 @@ export default function Gallery() {
                   loading='lazy'
                   className="w-full h-full object-cover"
                   effect="blur"
-                  alt={`Portfolio ${i + 1}`}
                   wrapperClassName="w-full h-full"
                 />
               </div>
