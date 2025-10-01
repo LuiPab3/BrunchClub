@@ -1,0 +1,43 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+/*Topografia Great Vibes*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/*Tipografia Monsterrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* input/textarea/select base para Contact */
+.tb-input {
+  @apply mt-1 w-full rounded-md border border-black/10 bg-[#E2D5D1] px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-black/10;
+}
+
+
+:root {
+  --radius: 0.5rem;
+}
+
+.container {
+  @apply mx-auto px-4 max-w-7xl;
+}
+
+
+/* Botón de selector de país (bandera + código) */
+.tb-phone .react-international-phone-country-selector-button {
+  @apply bg-transparent border-0 focus:outline-none focus:ring-0 hover:bg-black/5 rounded;
+}
+
+/* Dropdown de países por encima de todo */
+.react-international-phone-country-selector {
+  @apply z-50;
+}
+
+/* Sólo pinta rojo si el usuario ya interactuó con el campo */
+.tb-input[data-touched="true"]:invalid {
+  border-color: rgb(248 113 113 / 1);
+}
+.tb-input[data-touched="true"]:focus:invalid {
+  box-shadow: 0 0 0 2px rgb(252 165 165 / 0.6);
+}
