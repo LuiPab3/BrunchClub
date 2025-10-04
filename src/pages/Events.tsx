@@ -1,36 +1,46 @@
+// src/pages/Events.tsx  (vista "Services")
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 
-// src/pages/Events.tsx  (esta vista será tu "Services")
-const BG_IMAGE = '/src/assets/photos/services/bannerser.webp.jpg' 
+const BG_IMAGE = '/src/assets/photos/services/bannerser.webp.jpg'
+
+type Service = {
+  title: string
+  desc: string
+  img: string
+}
+
+const SERVICES: Service[] = [
+  {
+    title: 'Weddings',
+    desc:
+      'Elegant and timeless celebrations tailored to your story. From ceremony design to reception styling, we craft every detail with intention.',
+    img: '/src/assets/photos/services/Wedding.webp',
+  },
+  {
+    title: 'Weddings destination',
+    desc:
+      'Signature destination weddings across Guatemala: Antigua, Atitlán, Tikal and more. Full planning, vendor coordination and guest experiences.',
+    img: '/src/assets/photos/services/wd.webp',
+  },
+  {
+    title: 'Social events',
+    desc:
+      'From birthdays to baby showers and private brunches. Elevated atmospheres, bespoke décor and seamless hosting for every milestone.',
+    img: '/src/assets/photos/services/es.webp',
+  },
+  {
+    title: 'Corporate events',
+    desc:
+      'Brand launches, offsites and executive dinners. Polished production, premium service partners and guest-first experiences that connect.',
+    img: '/src/assets/photos/services/co.webp ',
+  },
+]
 
 export default function Events() {
-  const items = [
-    {
-      icon: 'fa-archway', // Weddings
-      title: 'Weddings',
-      desc: 'Elegant and timeless celebrations',
-    },
-    {
-      icon: 'fa-baby', // Baby Showers
-      title: 'Baby Showers',
-      desc: 'Gatherings to celebrate new beginnings',
-    },
-    {
-      icon: 'fa-utensils', // Brunches
-      title: 'Brunches',
-      desc: 'Stylish brunches and private events',
-    },
-    {
-      icon: 'fa-ring', // Proposals
-      title: 'Proposals',
-      desc: 'Romantic and unforgettable setups',
-    },
-  ]
-
   return (
     <div className="bg-white">
-      {/* Banner superior con título */}
+      {/* Banner superior */}
       <section className="relative w-full h-[220px] md:h-[280px] overflow-hidden">
         <LazyLoadImage
           src={BG_IMAGE}
@@ -41,39 +51,46 @@ export default function Events() {
         />
         <div className="absolute inset-0 bg-white/10" />
         <div className="absolute inset-0 flex items-center justify-center">
-          
         </div>
       </section>
 
-      {/* Íconos + tarjetas */}
-      <section className="container py-12 md:py-16">
-        {/* Fila de íconos grandes */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-14 place-items-center">
-          {items.map((it) => (
-            <div key={it.title} className="text-center">
-              <div className="inline-flex items-center justify-center">
-                <i className={`fa-solid ${it.icon} text-[72px] md:text-[88px]`} />
+      {/* Bloques verticales alternando imagen/texto */}
+      {SERVICES.map((s, i) => (
+        <section key={s.title} className="container py-12 md:py-16">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            {/* Imagen (alterna a izquierda/derecha en desktop) */}
+            <div className={`order-1 ${i % 2 === 1 ? 'md:order-2' : 'md:order-1'}`}>
+              <div className="rounded-xl overflow-hidden border border-black/10 shadow">
+                <LazyLoadImage
+                  src={s.img}
+                  alt={s.title}
+                  effect="blur"
+                  className="w-full h-[260px] md:h-[420px] object-cover"
+                  wrapperClassName="w-full h-full"
+                />
               </div>
             </div>
-          ))}
-        </div>
 
-        {/* Tarjetas beige con sombra */}
-        <div className="mt-10 md:mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-          {items.map((it) => (
-            <div
-              key={it.title}
-              className="bg-[#f3ece7] rounded-md border border-black/10 shadow-[0_4px_0_rgba(0,0,0,0.12)] px-6 py-6 text-center"
-            >
-              {/* Título estilo script (si agregas la fuente más abajo, se verá aún más parecido) */}
-              <div className="text-xl md:text-2xl font-serif italic text-gray-900">
-                {it.title}
-              </div>
-              <div className="text-sm text-gray-700 mt-2 leading-snug">{it.desc}</div>
+            {/* Texto (alterna a derecha/izquierda en desktop) */}
+            <div className={`order-2 ${i % 2 === 1 ? 'md:order-1' : 'md:order-2'}`}>
+              <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
+                {s.title}
+              </h2>
+              <p className="mt-4 text-gray-700 leading-relaxed max-w-prose">
+                {s.desc}
+              </p>
+
+              {/* (Opcional) CTA o bullets
+              <ul className="mt-4 space-y-2 text-gray-700 list-disc pl-5">
+                <li>Venue scouting & styling</li>
+                <li>Vendor management</li>
+                <li>On-site coordination</li>
+              </ul>
+              */}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
+      ))}
     </div>
   )
 }

@@ -1,43 +1,80 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 
-/*Topografia Great Vibes*/
+/* Tipografía Great Vibes */
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-/*Tipografia Monsterrat*/
+/* Tipografía Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* input/textarea/select base para Contact */
-.tb-input {
-  @apply mt-1 w-full rounded-md border border-black/10 bg-[#e6d9d3] px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-black/10;
-}
-
-
+/* Variables globales */
 :root {
   --radius: 0.5rem;
 }
 
-.container {
-  @apply mx-auto px-4 max-w-7xl;
+/* ===========================
+   CAPA: COMPONENTS / UTILITIES
+   =========================== */
+@layer components {
+  /* === Gallery helpers (necesarias) === */
+
+  /* Tarjeta/slot de imagen con ratio fijo 4:3 (evita CLS) */
+  .tb-thumb-card {
+    @apply relative overflow-hidden rounded-lg border bg-gray-100 shadow-sm aspect-[4/3];
+  }
+
+  /* Imagen dentro del slot */
+  .tb-thumb-img {
+    @apply w-full h-full object-cover;
+  }
+
+  /* Grid responsiva de galería */
+  .tb-gallery-grid {
+    @apply mt-10 grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4;
+  }
+
+  /* (Opcional) Esqueleto de carga */
+  .tb-skeleton {
+    @apply animate-pulse bg-gray-200;
+  }
+
+  /* input/textarea/select base para Contact */
+  .tb-input {
+    @apply mt-1 w-full rounded-md border border-black/10 bg-[#e6d9d3] px-4 py-3 text-sm text-gray-900 placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-black/10;
+  }
 }
 
+@layer utilities {
+  /* Contenedor responsive del sitio */
+  .container {
+    @apply mx-auto px-4 max-w-7xl;
+  }
 
-/* Botón de selector de país (bandera + código) */
-.tb-phone .react-international-phone-country-selector-button {
-  @apply bg-transparent border-0 focus:outline-none focus:ring-0 hover:bg-black/5 rounded;
-}
+  /* Utilidades de tipografía según fuentes importadas */
+  .font-greatvibes {
+    font-family: 'Great Vibes', cursive;
+  }
+  .font-montserrat {
+    font-family: 'Montserrat', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
 
-/* Dropdown de países por encima de todo */
-.react-international-phone-country-selector {
-  @apply z-50;
-}
+  /* Botón de selector de país (bandera + código) */
+  .tb-phone .react-international-phone-country-selector-button {
+    @apply bg-transparent border-0 focus:outline-none focus:ring-0 hover:bg-black/5 rounded;
+  }
 
-/* Sólo pinta rojo si el usuario ya interactuó con el campo */
-.tb-input[data-touched="true"]:invalid {
-  border-color: rgb(248 113 113 / 1);
-}
-.tb-input[data-touched="true"]:focus:invalid {
-  box-shadow: 0 0 0 2px rgb(252 165 165 / 0.6);
+  /* Dropdown de países por encima de todo */
+  .react-international-phone-country-selector {
+    @apply z-50;
+  }
+
+  /* Sólo pinta rojo si el usuario ya interactuó con el campo */
+  .tb-input[data-touched="true"]:invalid {
+    border-color: rgb(248 113 113 / 1);
+  }
+  .tb-input[data-touched="true"]:focus:invalid {
+    box-shadow: 0 0 0 2px rgb(252 165 165 / 0.6);
+  }
 }

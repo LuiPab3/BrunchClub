@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const nav = [
   { to: '/', label: 'Home' },
@@ -12,9 +12,10 @@ const nav = [
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
-      <div className="container flex items-center justify-between h-16">
-        <Link to="/" className="font-bold text-xl">The Brunch Club</Link>
-        <nav className="hidden md:flex gap-6">
+      <div className="container flex items-center h-16">
+
+        {/* Navegación — por defecto a la derecha */}
+        <nav className="hidden md:flex gap-6 ml-auto">
           {nav.map((n) => (
             <NavLink
               key={n.to}
