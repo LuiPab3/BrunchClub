@@ -1,8 +1,8 @@
 const SERVICES = [
   { title: 'Weddings',     desc: 'Elegant and timeless celebrations' },
-  { title: 'Baby Showers', desc: 'Gatherings to celebrate new beginnings' },
-  { title: 'Brunches',     desc: 'Stylish brunches and private events' },
-  { title: 'Proposals',    desc: 'Romantic and unforgettable setups' },
+  { title: 'Weddings destination', desc: 'Signature destination weddings' },
+  { title: 'Social events',     desc: 'From birthdays to baby showers' },
+  { title: 'Corporate events',    desc: 'Brand launches, offsites and executive dinners' },
 ]
 
 export default function OurServices({fontFamily='Montserrat'}) {

@@ -128,11 +128,11 @@ export default function Contact() {
                   required
                   inputMode="email"
                   pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
-                  title="Please enter a valid email (e.g., name@domain.com)."
+                  title="Please enter a valid email (e.g., name@event.com)."
                   onInvalid={(e) => (e.currentTarget as HTMLInputElement).setCustomValidity("Please enter a valid email (e.g., name@domain.com).")}
                   onInput={(e) => (e.currentTarget as HTMLInputElement).setCustomValidity("")}
                   autoComplete="email"
-                  placeholder="name@domain.com"
+                  placeholder="name@event.com"
                 />
               </Field>
 
@@ -164,16 +164,16 @@ export default function Contact() {
                   <option value="" disabled>
                     Select an option
                   </option>
-                  <option>Wedding</option>
-                  <option>Engagement / Proposal</option>
-                  <option>Brunch / Private event</option>
-                  <option>Baby Shower</option>
+                  <option>Weddings</option>
+                  <option>Weddings destination</option>
+                  <option>Social events</option>
+                  <option>Corporate events</option>
                   <option>Other</option>
                 </select>
               </Field>
 
               {/* Fecha (mínimo hoy, opcional) */}
-              <Field label="Approximate Event Date">
+              <Field label="Approximate event date">
                 <input className="tb-input" type="date" name="date" min={today} />
               </Field>
 
