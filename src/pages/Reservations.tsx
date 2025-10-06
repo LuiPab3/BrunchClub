@@ -73,12 +73,11 @@ export default function Contact() {
     <section className="relative w-full min-h-[80vh]">
       {/* Fondo con imagen */}
       <div className="absolute inset-0">
-        <LazyLoadImage
+        <img
           src={BG_IMAGE}
           alt=""
-          effect="blur"
+          loading='eager'
           className="w-full h-full object-cover"
-          wrapperClassName="w-full h-full"
         />
         {/* capa sutil para legibilidad si la foto es muy clara */}
         <div className="absolute inset-0 bg-black/20" />

@@ -77,7 +77,6 @@ export default function Gallery() {
                   alt={alt}
                   loading="lazy"
                   effect="blur"
-                  className="tb-thumb-img"
                   wrapperClassName="w-full h-full"
                   // Si USE_THUMBS=true pero la miniatura no existe, reintenta con la full
                   onError={(e: any) => (e.currentTarget.src = img)}

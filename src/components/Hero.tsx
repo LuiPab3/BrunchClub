@@ -40,6 +40,7 @@ export default function Hero() {
           key={src}
           src={src}
           alt=""
+          loading='eager'
           className={[
             'absolute inset-0 w-full h-full object-cover transition-opacity duration-700',
             i === index ? 'opacity-100' : 'opacity-0',

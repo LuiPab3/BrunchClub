@@ -8,12 +8,11 @@ export default function Menu() {
         <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-6">
           {/*Columna Izquierda: Imagen del lado Izquierdo*/}
           <div className="h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-md border bg-gray-100">
-            <LazyLoadImage
-              src="/src/assets/photos/wedding destinations/table.jpeg"
+            <img
+              src="/src/assets/photos/wedding destinations/table.webp"
               alt="Main"
+              loading='eager'
               className="w-full h-full object-cover"
-              effect="blur"
-              wrapperClassName="w-full h-full"
             />
           </div>
 
@@ -32,22 +31,20 @@ export default function Menu() {
             {/*Imagenes en la parte inferior*/}
             <div className="grid grid-cols-2 gap-4 mt-6">
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                <LazyLoadImage
-                  src="/src/assets/photos/wedding destinations/food.jpeg"
+                <img
+                  src="/src/assets/photos/wedding destinations/food.webp"
                   alt="Right 1"
+                  loading='eager'
                   className="w-full h-full object-cover"
-                  effect="blur"
-                  wrapperClassName="w-full h-full"
                 />
               </div>
 
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
-                <LazyLoadImage
-                  src="/src/assets/photos/wedding destinations/flowers.jpeg"
+                <img
+                  src="/src/assets/photos/wedding destinations/flowers.webp"
                   alt="Right 2"
+                  loading='eager'
                   className="w-full h-full object-cover"
-                  effect="blur"
-                  wrapperClassName="w-full h-full"
                 />
               </div>
             </div>

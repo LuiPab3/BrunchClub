@@ -7,6 +7,7 @@ export default function About() {
         <img
           src="/src/assets/photos/about/abb3.webp"
           alt=""
+          loading='eager'
           className="w-full h-full object-cover"
         />
       </section>
@@ -23,6 +24,7 @@ export default function About() {
               <img
                 src="/src/assets/photos/about/Linda.webp"
                 alt="Linda portrait"
+                loading='eager'
                 className="w-full h-full object-cover"
               />
             </div>
@@ -62,6 +64,7 @@ export default function About() {
               <img
                 src="/src/assets/photos/about/ab1.webp"
                 alt="Event"
+                loading='eager'
                 className="w-full h-full object-cover"
               />
             </div>
