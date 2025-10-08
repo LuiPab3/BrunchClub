@@ -42,12 +42,16 @@ export default function About() {
             </div>
               <div className="bg-[#e9ddd8] rounded-md border shadow-sm p-6 leading-relaxed text-gray-800">
                 <p>
-                  Achiever, optimist, tastemaker, lighting enthusiast, and an all-around
-                  sense of chill. She has a quick-witted sense of humor, loves travel,
-                  culture, and cuisine, and is decisive and forward-thinking. Her
-                  wedding-day energy is calm yet driven, and her background in classical
-                  music has shaped her attention to detail and appreciation for the arts,
-                  fashion, and interior design. Let&apos;s connect.
+                    Hello, I’m Linda Fernandez Noack, founder of The Brunch Club. With a Bachelor’s
+                    degree in Business Administration and a Master’s in Neuromarketing and
+                    Consumer Behavior, I discovered in the world of events the perfect stage to bring
+                    together strategy, creativity, and luxury.
+                    As a Wedding &amp; Event Planner specialized in destination weddings, my purpose is
+                    to design unique celebrations that reflect the essence of each client, carefully
+                    curating every detail with precision and sophistication.
+                    Together with a passionate and visionary team, at The Brunch Club we have
+                    transformed the art of celebrating into memorable experiences that transcend time
+                    and place. Let&apos;s connect.
                 </p>
               </div>
             </div>
@@ -75,9 +79,15 @@ export default function About() {
                 We value inclusivity and culture.
               </h4>
               <p className="mt-3 text-gray-700 leading-relaxed font-medium">
-                Memories aren&apos;t only made on your wedding day. We love crafting
-                entire weekend experiences that inspire, yielding a series of iconic
-                events. Cheers to the weekend.
+                The Brunch Club was born in 2024 from a passion for transforming moments into
+                unique experiences, where every detail is crafted with precision and creativity.
+                At The Brunch Club, we believe that every celebration tells a unique story. Our
+                passion lies in listening, dreaming alongside our clients, and bringing their vision
+                for their special day to life.
+                More than organizing events, we create tailor-made experiences where every
+                detail reflects the essence of those who trust us. We are inspired by the magic of
+                transforming ideas into authentic atmospheres, filled with emotion, style, and
+                personality.
               </p>
             </div>
           </div>

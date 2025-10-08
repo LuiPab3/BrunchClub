@@ -9,7 +9,7 @@ export default function Menu() {
           {/*Columna Izquierda: Imagen del lado Izquierdo*/}
           <div className="h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-md border bg-gray-100">
             <img
-              src="/src/assets/photos/wedding destinations/table.webp"
+              src="/src/assets/photos/wedding destinations/thbc2.webp"
               alt="Main"
               loading='eager'
               className="w-full h-full object-cover"
@@ -32,7 +32,7 @@ export default function Menu() {
             <div className="grid grid-cols-2 gap-4 mt-6">
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
                 <img
-                  src="/src/assets/photos/wedding destinations/food.webp"
+                  src="/src/assets/photos/wedding destinations/thebc.webp"
                   alt="Right 1"
                   loading='eager'
                   className="w-full h-full object-cover"
@@ -41,7 +41,7 @@ export default function Menu() {
 
               <div className="h-[150px] md:h-[245px] rounded-lg overflow-hidden shadow-sm border bg-gray-100">
                 <img
-                  src="/src/assets/photos/wedding destinations/flowers.webp"
+                  src="/src/assets/photos/wedding destinations/at.webp"
                   alt="Right 2"
                   loading='eager'
                   className="w-full h-full object-cover"
